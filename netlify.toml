@@ -1,0 +1,28 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+[functions]
+  directory = "netlify/functions"
+[build.environment]
+  NODE_VERSION = "22"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+[[redirects]]
+  from = "/services/cloud-infrastructure"
+  to = "/services/data-engineering/"
+  status = 301
+[[redirects]]
+  from = "/services/cloud-infrastructure/"
+  to = "/services/data-engineering/"
+  status = 301
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'"
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
