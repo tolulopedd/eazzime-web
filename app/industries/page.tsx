@@ -1,5 +1,5 @@
 import { industries } from "@/lib/content";
-import { PageHero, Button, ContactCTA } from "@/components/ui";
+import { PageHero, TextLink, ContactCTA } from "@/components/ui";
 import { Icon } from "@/components/icons";
 export const metadata = {
   alternates: { canonical: "/industries/" },
@@ -12,8 +12,8 @@ export default function Industries() {
     <>
       <PageHero
         eyebrow="INDUSTRIES WE SERVE"
-        title="Technology that understands your world."
-        description="Every industry has its own challenges. We start with yours, then design a solution around the way your business works."
+        title="Built for your industry."
+        description="Solutions shaped around your customers, workflows, and systems."
       />
       <section className="section">
         <div className="container industry-grid">
@@ -28,12 +28,11 @@ export default function Industries() {
               <span className="card-number">0{i + 1}</span>
               <h2>{title}</h2>
               <p>{copy}</p>
-              <Button
+              <TextLink
                 href={`/contact/?industry=${encodeURIComponent(title)}`}
-                secondary
               >
-                Explore the Possibilities
-              </Button>
+                Discuss your needs
+              </TextLink>
             </article>
           ))}
         </div>

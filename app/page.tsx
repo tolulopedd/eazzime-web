@@ -2,7 +2,6 @@ import {
   ArrowDown,
   ArrowUpRight,
   Check,
-  Braces,
   Database,
   Landmark,
   Atom,
@@ -20,7 +19,7 @@ import {
 } from "@/components/ui";
 import { Reveal } from "@/components/motion";
 import { Icon } from "@/components/icons";
-import { industries, steps, site } from "@/lib/content";
+import { industries, site } from "@/lib/content";
 export const metadata = { alternates: { canonical: "/" } };
 export default function Home() {
   return (
@@ -37,9 +36,9 @@ export default function Home() {
             </h1>
             <p>{site.tagline}</p>
             <div className="hero-actions">
-              <Button href="/services/">Explore Our Services</Button>
-              <Link className="hero-talk" href="/contact/">
-                Let’s Talk <ArrowUpRight size={19} />
+              <Button href="/contact/">Discuss Your Project</Button>
+              <Link className="hero-talk" href="/services/">
+                Explore Services <ArrowUpRight size={19} />
               </Link>
             </div>
             <div className="hero-proof">
@@ -91,18 +90,13 @@ export default function Home() {
           <Reveal>
             <SectionTitle
               eyebrow="HELLO, WE’RE EAZZIME"
-              title="Your business is unique. Your technology should be too."
+              title="Technology built around your business."
             />
           </Reveal>
           <Reveal className="intro-copy">
             <p>
-              Great technology starts with understanding your business. We bring
-              strategy, design, and engineering together to solve the challenges
-              that stand between you and what’s next.
-            </p>
-            <p>
-              From a new digital product to a more connected enterprise, we help
-              turn ambition into practical, lasting solutions.
+              We design software, connect systems, and turn business data into
+              useful insights—all shaped around how your team works.
             </p>
             <TextLink href="/about/">Get to know EazziMe</TextLink>
           </Reveal>
@@ -113,19 +107,23 @@ export default function Home() {
           <div className="section-heading-row">
             <SectionTitle
               eyebrow="WHAT WE DO"
-              title="The expertise to move you forward."
-              description="From the first conversation to continuous improvement, we bring the right capabilities to every stage."
+              title="What we can help you build."
             />
             <TextLink href="/services/">View all services</TextLink>
           </div>
           <ServiceCards limit={6} />
-          <div className="service-footnote">
-            <Braces size={22} />
-            <p>One partner. A connected approach to technology.</p>
-            <Link href="/services/">
-              Discover all 10 services <ArrowRightInline />
-            </Link>
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
+          <div className="section-heading-row">
+            <SectionTitle
+              eyebrow="PROJECTS WE’VE BUILT"
+              title="Projects we’ve built."
+            />
+            <TextLink href="/solutions/">View all projects</TextLink>
           </div>
+          <SolutionCards />
         </div>
       </section>
       <section className="section industries-section">
@@ -133,8 +131,7 @@ export default function Home() {
           <div className="section-heading-row">
             <SectionTitle
               eyebrow="BUILT AROUND YOUR WORLD"
-              title="Different industries. Shared ambition."
-              description="Technology shaped by the way your industry works, and where you want to take it."
+              title="Expertise across industries."
             />
             <TextLink href="/industries/">Explore industries</TextLink>
           </div>
@@ -158,12 +155,9 @@ export default function Home() {
             <SectionTitle
               light
               eyebrow="THE EAZZIME APPROACH"
-              title="More than a technology provider. A partner in your progress."
+              title="A partner from idea to launch."
             />
-            <p>
-              We connect technical decisions to business priorities, so every
-              step has a purpose.
-            </p>
+            <p>Clear priorities. Shared decisions. Support beyond launch.</p>
             <Button href="/about/#approach" secondary>
               How We Work
             </Button>
@@ -174,20 +168,20 @@ export default function Home() {
           <div className="why-list">
             {[
               [
-                "Business first. Always.",
-                "We start with what you need to achieve, then choose the technology that gets you there.",
+                "Business focus",
+                "Technology choices guided by your business goals.",
               ],
               [
-                "Built with you, not just for you.",
-                "Clear communication, regular feedback, and shared decisions keep your team involved.",
+                "Close collaboration",
+                "Regular reviews keep your team involved.",
               ],
               [
-                "Quality in the details.",
-                "Security, accessibility, and maintainability are part of how we design and build.",
+                "Careful engineering",
+                "Security, accessibility, and maintainability built into the work.",
               ],
               [
-                "A long-term perspective.",
-                "We create a foundation you can keep improving as your needs evolve.",
+                "Ongoing support",
+                "Maintain and improve your product as needs change.",
               ],
             ].map(([title, copy], i) => (
               <Reveal key={title}>
@@ -203,46 +197,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section">
-        <div className="container">
-          <div className="section-heading-row">
-            <SectionTitle
-              eyebrow="PROJECTS WE’VE BUILT"
-              title="A look at what we build."
-              description="Explore RentSure, ChaufX, EazziHotech, and EazziBulkBuy—platforms we’ve developed for real estate, personal-driver services, hospitality, and commerce."
-            />
-            <TextLink href="/solutions/">Explore solutions</TextLink>
-          </div>
-          <SolutionCards />
-        </div>
-      </section>
-      <section className="section soft">
-        <div className="container">
-          <SectionTitle
-            eyebrow="FROM COMPLEXITY TO CLARITY"
-            title="A clear process. A shared direction."
-          />
-          <div className="process-grid">
-            {steps.map(([title, copy], i) => (
-              <Reveal key={title}>
-                <span className="process-number">
-                  0{i + 1}
-                  <span />
-                </span>
-                <h3>{title}</h3>
-                <p>{copy}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
       <section className="tech-section">
         <div className="container">
           <div className="eyebrow">
             <span />
-            THE RIGHT TOOLS FOR YOUR CHALLENGE
+            OUR TECHNOLOGY STACK
           </div>
-          <h2>Modern technology. Purposefully chosen.</h2>
+          <h2>The right tools for your product.</h2>
           <div className="tech-list">
             {[
               "React",
@@ -257,10 +218,6 @@ export default function Home() {
               <span key={t}>{t}</span>
             ))}
           </div>
-          <p>
-            We select each stack around your requirements, your team, and the
-            life of your product.
-          </p>
         </div>
       </section>
       <ContactCTA />
@@ -279,7 +236,4 @@ export default function Home() {
       />
     </>
   );
-}
-function ArrowRightInline() {
-  return <ArrowUpRight size={17} />;
 }

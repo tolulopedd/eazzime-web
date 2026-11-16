@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header, Footer } from "@/components/layout";
+import "./sales.css";
+import { SiteShell } from "@/components/site-shell";
 import { site } from "@/lib/content";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -29,9 +30,7 @@ export default function RootLayout({
         <a className="skip-link" href="#main">
           Skip to content
         </a>
-        <Header />
-        <main id="main">{children}</main>
-        <Footer />
+        <SiteShell>{children}</SiteShell>
       </body>
     </html>
   );

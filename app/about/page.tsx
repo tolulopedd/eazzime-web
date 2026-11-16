@@ -12,26 +12,23 @@ export default function About() {
     <>
       <PageHero
         eyebrow="ABOUT EAZZIME"
-        title="Good technology begins with understanding."
-        description="We bring business context and technical craft together to help you build what comes next."
+        title="Your technology partner."
+        description="Consulting, design, engineering, and support in one team."
       />
       <section className="section">
         <div className="container about-intro">
           <SectionTitle
             eyebrow="OUR PURPOSE"
-            title="Make technology work for your business."
+            title="Built around your priorities."
           />
           <div className="intro-copy">
             <p>
-              EazziMe Technologies Inc. is a technology and digital
-              transformation company focused on building software, connecting
-              systems, and making business processes work better.
+              EazziMe Technologies Inc. builds software, connects systems, and
+              helps businesses make better use of their data.
             </p>
             <p>
-              Our approach brings consulting, product design, engineering,
-              implementation and support into one conversation. We help you make
-              clear decisions, build useful solutions, and keep improving them
-              over time to meet the need of your customers.
+              From consulting and product design to implementation and support,
+              we work with your team to meet your customers’ needs.
             </p>
           </div>
         </div>
@@ -60,26 +57,14 @@ export default function About() {
         <div className="container">
           <SectionTitle
             eyebrow="WHAT GUIDES US"
-            title="Principles you can see in the work."
+            title="How we work together."
           />
           <div className="four-col">
             {[
-              [
-                "Clarity",
-                "Make decisions understandable. Share the reasoning, the trade-offs, and the next step.",
-              ],
-              [
-                "Ownership",
-                "Stay accountable for the work and the care it needs beyond delivery.",
-              ],
-              [
-                "Collaboration",
-                "Respect the knowledge within your team and build with it.",
-              ],
-              [
-                "Purposeful innovation",
-                "Explore new ideas where they solve a real problem.",
-              ],
+              ["Clarity", "Clear decisions, trade-offs, and next steps."],
+              ["Ownership", "Accountability through delivery and support."],
+              ["Collaboration", "Your team’s knowledge informs the work."],
+              ["Purposeful innovation", "New ideas that solve real problems."],
             ].map(([t, d]) => (
               <Reveal key={t}>
                 <h3>{t}</h3>

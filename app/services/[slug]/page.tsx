@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Check, ArrowLeft } from "lucide-react";
-import { services, steps } from "@/lib/content";
-import { PageHero, Button, ContactCTA, SectionTitle } from "@/components/ui";
+import { services } from "@/lib/content";
+import { PageHero, Button } from "@/components/ui";
 import { Icon } from "@/components/icons";
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -45,7 +45,7 @@ export default async function Service({
             <h2>{s.short}</h2>
             <p>
               {s.details ??
-                "We begin with your business context, existing systems, and the people who will use the solution. Together, we define a practical scope, make the trade-offs clear, and deliver in manageable stages."}
+                "We agree on scope, work in manageable stages, and review progress with your team."}
             </p>
             <Button href={`/contact/?service=${s.slug}`}>
               Discuss Your Project
@@ -55,7 +55,7 @@ export default async function Service({
             <span className="icon-box">
               <Icon name={s.icon} size={32} />
             </span>
-            <h3>What this means for your business</h3>
+            <h3>Business benefits</h3>
             {s.benefits.map((b) => (
               <p key={b}>
                 <Check size={19} />
@@ -65,24 +65,6 @@ export default async function Service({
           </article>
         </div>
       </section>
-      <section className="section soft">
-        <div className="container">
-          <SectionTitle
-            eyebrow="FROM DISCOVERY TO DELIVERY"
-            title="A practical path to progress."
-          />
-          <div className="process-grid">
-            {steps.map(([t, d], i) => (
-              <article key={t}>
-                <span className="process-number">0{i + 1}</span>
-                <h3>{t}</h3>
-                <p>{d}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-      <ContactCTA />
     </>
   );
 }

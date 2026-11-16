@@ -100,9 +100,6 @@ export function Footer() {
             <br />
             Meaningful business impact.
           </p>
-          <span className="footer-note">
-            Your next chapter starts with a conversation.
-          </span>
         </div>
         <div>
           <h3>Explore</h3>

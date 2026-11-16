@@ -57,7 +57,7 @@ export const services = [
     description:
       "From data conversion, cleansing, mapping, and migration to data warehousing, insights, and analytics, we help make your business data accurate, consistent, and useful.",
     details:
-      "Our experience covers converting data between formats, cleansing inconsistent records, mapping source data to target systems, and migrating data between platforms. We bring information together in data warehouses and turn it into practical reporting, insights, and analytics. Whether you are replacing a system or consolidating business information, we focus on data quality, validation, and making the results useful to your team.",
+      "We convert, cleanse, map, and migrate data between systems. We build data warehouses for reporting and analytics, with validation at each stage.",
     benefits: [
       "Cleaner, more consistent records for everyday operations",
       "Clear data mapping and validated conversion and migration",

@@ -10,8 +10,8 @@ export default function Services() {
     <>
       <PageHero
         eyebrow="OUR SERVICES"
-        title="Your goals. Our expertise. A better way forward."
-        description="A connected set of capabilities to build new products, modernize operations, and turn technology into a business advantage."
+        title="Expertise for your next project."
+        description="Software, AI, design, and data services—from planning to ongoing support."
       />
       <section className="section soft">
         <div className="container">

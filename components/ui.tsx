@@ -7,7 +7,7 @@ import {
   Activity,
   ShieldCheck,
   Workflow,
-  Sparkles,
+  Rocket,
   Hotel,
   KeyRound,
   CalendarCheck,
@@ -85,19 +85,12 @@ export function ContactCTA() {
         <div>
           <div className="eyebrow">
             <span />
-            LET’S BUILD SOMETHING THAT MATTERS
+            LET’S TALK
           </div>
-          <h2>
-            Your ambition.
-            <br />
-            Our next conversation.
-          </h2>
-          <p>
-            Tell us where you want to go. We’ll help you work out how to get
-            there.
-          </p>
+          <h2>What would you like to build?</h2>
+          <p>Share your idea. Let’s work out the next step.</p>
         </div>
-        <Button href="/contact/">Let’s Talk About Your Project</Button>
+        <Button href="/contact/">Discuss Your Project</Button>
       </div>
     </section>
   );
@@ -268,8 +261,8 @@ export function ProductVisual({
             </span>
           </div>
           <div className="floating-card ai-float">
-            <Sparkles size={18} />
-            <span>Built for your next chapter</span>
+            <Rocket size={18} />
+            <span>From idea to impact</span>
             <ArrowUpRight size={16} />
           </div>
           <span className="visual-caption">

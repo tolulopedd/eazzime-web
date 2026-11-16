@@ -13,23 +13,20 @@ export default function Contact() {
     <>
       <PageHero
         eyebrow="LET’S TALK"
-        title="Every great solution starts with a conversation."
-        description="Tell us about your goals, where you are today, and what you want to do next."
+        title="Let’s discuss your project."
+        description="Tell us what you need. We’ll help you define the next step."
       />
       <section className="section soft">
         <div className="container contact-grid">
           <aside>
             <span className="eyebrow">YOUR NEXT STEP</span>
-            <h2>Let’s find the right way forward.</h2>
-            <p>
-              You don’t need a finished brief. Bring your questions, your ideas,
-              or the challenge you’re working through.
-            </p>
+            <h2>Start with your idea.</h2>
+            <p>A brief outline is enough to start.</p>
             <h3>What happens next?</h3>
             {[
-              "We review your message and business context.",
-              "We connect to understand your priorities.",
-              "Together, we define a practical next step.",
+              "We review your enquiry.",
+              "We discuss your priorities.",
+              "We agree on the next step.",
             ].map((t) => (
               <p className="check-line" key={t}>
                 <Check size={18} />

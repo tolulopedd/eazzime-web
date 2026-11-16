@@ -72,3 +72,7 @@ References: [Resend email API](https://resend.com/docs/api-reference/emails/send
 Semantic landmarks, a skip link, keyboard focus rings, labelled form controls, responsive navigation with Escape support, reduced-motion preferences, and image alternatives are included. Navigation remains usable on mobile. The static output, small local logo assets, system font stack, and CSS/SVG illustrations avoid remote image/font latency and large hero downloads. Formal WCAG certification and field Core Web Vitals require further deployed-site measurement; neither is claimed.
 
 `npm test` checks exported internal links/assets, page headings/metadata, and the Resend handler (validation, fixed recipient, Reply-To, retries, and failures). Browser QA and remaining deployment checks are recorded in `QA.md`.
+
+## AI sales assistant and sales workspace
+
+The site now includes a consent-aware AI chatbot, a Supabase-backed lead workspace at `/admin/sales/`, Resend notifications, Cal.com booking confirmation support and opt-in GA4 events. See [SALES_SETUP.md](SALES_SETUP.md) for environment variables, database migration, staff provisioning, integration settings, security/retention behavior and Netlify deployment. Use [SALES_ACCEPTANCE.md](SALES_ACCEPTANCE.md) for live provider acceptance checks before launch.

@@ -5,3 +5,14 @@ out/
 !.env.example
 *.tsbuildinfo
 .DS_Store
+
+# Browser test output
+playwright-report/
+test-results/
+
+.next-sales-test/
+
+qa/sales-ai-evaluation.json
+
+# Netlify local runtime/cache
+.netlify/

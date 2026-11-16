@@ -7,7 +7,11 @@
     "build": "next build --webpack",
     "start": "python3 -m http.server 3000 --directory out",
     "typecheck": "tsc --noEmit",
-    "test": "node --test scripts/*.test.mjs"
+    "test": "node --test scripts/*.test.mjs",
+    "prebuild": "node scripts/build-knowledge.mjs",
+    "test:browser": "playwright test",
+    "eval:sales": "node scripts/evaluate-sales-ai.mjs",
+    "dev:full": "npm run build && npx --yes netlify-cli dev --dir out --framework '#static' --port 8888 --no-open"
   },
   "dependencies": {
     "framer-motion": "^12.23.0",
@@ -17,6 +21,8 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@playwright/test": "^1.65.1",
     "@tailwindcss/postcss": "^4.1.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",

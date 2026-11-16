@@ -10,8 +10,8 @@ export default function Solutions() {
     <>
       <PageHero
         eyebrow="OUR SOLUTIONS"
-        title="Ideas brought to life."
-        description="Explore platforms we’ve built to connect people, simplify operations, and bring business ideas to life."
+        title="Our work in action."
+        description="Explore the products we’ve built for real estate, driver services, hospitality, and commerce."
       />
       <section className="section">
         <div className="container">

@@ -1,0 +1,180 @@
+{
+  "company": "EazziMe Technologies Inc.",
+  "email": "info@eazzime.com",
+  "services": [
+    {
+      "slug": "custom-software",
+      "title": "Custom Software Development",
+      "description": "Purpose-built web and mobile applications that turn complex requirements into intuitive, dependable experiences.",
+      "benefits": [
+        "Workflows shaped around your team",
+        "Accessible web and mobile experiences",
+        "An architecture that can grow with you"
+      ],
+      "source": "/services/custom-software/"
+    },
+    {
+      "slug": "enterprise-applications",
+      "title": "Enterprise Application Development",
+      "description": "Bring your core operations together with enterprise applications designed for your processes, permissions, and scale.",
+      "benefits": [
+        "Shared information across departments",
+        "Clear roles and access controls",
+        "Maintainable systems for long-term use"
+      ],
+      "source": "/services/enterprise-applications/"
+    },
+    {
+      "slug": "ai-automation",
+      "title": "AI Solutions & Intelligent Automation",
+      "description": "Put AI to work where it matters, from document processing and knowledge search to assisted decisions and repetitive tasks.",
+      "benefits": [
+        "Less time spent on manual tasks",
+        "Human oversight built into workflows",
+        "Practical evaluation before rollout"
+      ],
+      "source": "/services/ai-automation/"
+    },
+    {
+      "slug": "data-engineering",
+      "title": "Data Engineering",
+      "description": "From data conversion, cleansing, mapping, and migration to data warehousing, insights, and analytics, we help make your business data accurate, consistent, and useful.",
+      "details": "We convert, cleanse, map, and migrate data between systems. We build data warehouses for reporting and analytics, with validation at each stage.",
+      "benefits": [
+        "Cleaner, more consistent records for everyday operations",
+        "Clear data mapping and validated conversion and migration",
+        "Consolidated data warehouses for reporting and analysis",
+        "Practical insights to support informed business decisions"
+      ],
+      "source": "/services/data-engineering/"
+    },
+    {
+      "slug": "product-design",
+      "title": "UI/UX Design & Product Development",
+      "description": "Move from an early idea to a validated product through research, prototyping, and accessible interface design.",
+      "benefits": [
+        "Clearer journeys for your users",
+        "Test ideas before major investment",
+        "A consistent, reusable design system"
+      ],
+      "source": "/services/product-design/"
+    },
+    {
+      "slug": "systems-integration",
+      "title": "Systems Integration & APIs",
+      "description": "Connect applications and data through reliable APIs and integrations that make information flow across your business.",
+      "benefits": [
+        "Fewer disconnected tools",
+        "Less duplicate data entry",
+        "Observable, documented integrations"
+      ],
+      "source": "/services/systems-integration/"
+    },
+    {
+      "slug": "business-automation",
+      "title": "Business Process Automation",
+      "description": "Simplify approvals, handoffs, and repeatable operations with automation designed around the way your team works.",
+      "benefits": [
+        "Consistent processes and ownership",
+        "Fewer repetitive administrative steps",
+        "Visibility into exceptions and bottlenecks"
+      ],
+      "source": "/services/business-automation/"
+    },
+    {
+      "slug": "digital-transformation",
+      "title": "IT Consulting & Digital Transformation",
+      "description": "Make informed technology decisions with a practical assessment of your systems, opportunities, and delivery priorities.",
+      "benefits": [
+        "A roadmap tied to business priorities",
+        "Technology choices with clear trade-offs",
+        "A realistic approach to change"
+      ],
+      "source": "/services/digital-transformation/"
+    },
+    {
+      "slug": "managed-support",
+      "title": "Application Maintenance & Managed Support",
+      "description": "Keep applications useful and dependable through structured maintenance, monitoring, issue resolution, and continuous improvement.",
+      "benefits": [
+        "Planned updates and maintenance",
+        "Clear incident and escalation processes",
+        "Ongoing performance improvements"
+      ],
+      "source": "/services/managed-support/"
+    },
+    {
+      "slug": "data-analytics",
+      "title": "Data Analytics & Business Intelligence",
+      "description": "Bring data together in practical dashboards and reporting tools that help teams understand performance and make informed decisions.",
+      "benefits": [
+        "A shared view of business information",
+        "Reporting built around real decisions",
+        "Better visibility into data quality"
+      ],
+      "source": "/services/data-analytics/"
+    }
+  ],
+  "projects": [
+    {
+      "title": "RentSure",
+      "description": "A rental-profile and rent-score platform helping tenants present their rental history and property owners review applications in Nigeria.",
+      "projectDetails": "Developed by EazziMe Technologies Inc., RentSure brings tenants, landlords, and property agents into a shared rental-information platform. Tenants organize their profile and supporting records, while property teams review rental history and rent-score information to support their assessment.",
+      "features": [
+        "Tenant profiles with identity and supporting rental information",
+        "Rent-score summaries alongside rental history and profile indicators",
+        "Views for landlords and agents to review applicant information",
+        "Rental records, reminders, and proof of rent in one place"
+      ],
+      "projectUrl": "https://rentsureng.com",
+      "source": "/solutions/rentsure/"
+    },
+    {
+      "title": "ChaufX",
+      "description": "A personal-driver platform connecting customers with professional drivers for journeys in their own vehicles.",
+      "projectDetails": "Developed by EazziMe Technologies Inc., ChaufX brings customer booking, driver onboarding, and trip management into a connected platform. Customers arrange a driver for their own vehicle, while dedicated customer and driver apps support each side of the journey.",
+      "features": [
+        "Trip booking with pickup, destination, and preferred time",
+        "Driver applications with document uploads and review status",
+        "Customer and driver apps for managing and accepting trips",
+        "Driver earnings tracking and role-based account access"
+      ],
+      "projectUrl": "https://chaufx.ca",
+      "source": "/solutions/operations-workspace/"
+    },
+    {
+      "title": "EazziHotech",
+      "description": "A hospitality operations platform bringing bookings, guest records, and payment tracking together for hotels, shortlets, and serviced apartments.",
+      "projectDetails": "Developed by EazziMe Technologies Inc., EazziHotech helps hospitality teams manage the guest journey from booking through check-out. Operators can organize multiple properties and units in one workspace, with separate tenant data and role-based access for administrators, managers, and staff.",
+      "features": [
+        "Booking, check-in, and check-out workflows",
+        "Guest profiles, identity records, and stay history",
+        "Payment, outstanding balance, damage, and settlement tracking",
+        "Multi-property management with role-based staff access",
+        "Guest email notifications for key stages of a stay"
+      ],
+      "projectUrl": "https://www.eazzihotech.com",
+      "source": "/solutions/intelligent-knowledge/"
+    },
+    {
+      "title": "EazziBulkBuy.ca",
+      "description": "A bulk food and produce platform that helps customers shop community sales, choose quantities, and place orders online.",
+      "projectDetails": "Built by EazziMe Technologies Inc., EazziBulkBuy connects customers with bulk food and produce sales. The platform brings active sales events, product selection, and online ordering together in one place for communities in Manitoba.",
+      "features": [
+        "Active bulk sales with product details and quantity selection",
+        "Normal sales and discounted bundle offers",
+        "Checkout options for Interac e-Transfer and card payments",
+        "Order confirmation and pickup instructions by email"
+      ],
+      "projectUrl": "https://eazzibulkbuy.ca",
+      "source": "/solutions/connected-commerce/"
+    }
+  ],
+  "guidance": [
+    "MVP enquiries are handled through product design and custom software development. Scope must be confirmed by the team.",
+    "Fintech enquiries are welcome; regulatory compliance, specific banking integrations and certifications must be confirmed by the team.",
+    "ChaufX is a personal-driver platform. Do not describe it as a banking or money-transfer product.",
+    "No published price list, guaranteed timelines, client testimonials or performance statistics are available.",
+    "A free 30-minute technology consultation is offered; availability is determined by the booking calendar."
+  ]
+}

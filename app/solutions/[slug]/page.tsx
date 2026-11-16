@@ -4,7 +4,6 @@ import {
   PageHero,
   ProductVisual,
   ProjectVisual,
-  Button,
   ContactCTA,
 } from "@/components/ui";
 import { ArrowUpRight, Check } from "lucide-react";
@@ -95,7 +94,6 @@ export default async function Solution({
                 <span key={t}>{t}</span>
               ))}
             </div>
-            <Button href="/contact/">Discuss a Similar Solution</Button>
           </div>
         </div>
       </section>

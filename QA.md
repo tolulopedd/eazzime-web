@@ -30,3 +30,12 @@ Actual Netlify Forms persistence, spam classification, email notifications, and 
 The canonical domain, public contact details, privacy policy details, and real portfolio entries remain owner-configurable. Portfolio concepts are labelled and the privacy page is marked as a draft.
 
 No formal accessibility certification, Lighthouse score, or field Core Web Vitals result is claimed. Browser testing used the available Chromium-based in-app browser; Safari, Firefox, and physical devices were not tested.
+
+## AI sales assistant — November 14, 2026
+
+- Production Next.js static export and TypeScript check pass with `/admin/sales/` excluded from indexing and sitemap inclusion.
+- 25 Node tests pass: existing contact and exported-site checks, sales request validation, explicit consent, origin/route guards, Turnstile hostname/action checks, model context and error handling, receipt HMAC, admin authentication and role enforcement, notification idempotency, CSV escaping and policy/headers.
+- The actual SQL migration was executed in PGlite (PostgreSQL WASM). Verified schema creation, public access denial, RPC grants, duplicate email/request handling, original attribution, outbox locks/retry limits, booking deduplication, scoped metrics and cascade deletion. This is not a substitute for applying and testing the migration in the target Supabase project.
+- 12 Playwright checks pass using Chrome at desktop, iPhone-sized and 320px phone viewports. Verified consent flow, natural-language UI with mocked AI response, failed lead submission and retry, preserved input and request IDs, receipt display, optional analytics with no form/conversation data, no booking conversion before server confirmation, duplicate-event suppression, once-per-session engagement welcome, admin sign-in shell, enquiry review, notes and content editing. No horizontal document overflow detected.
+- Desktop/mobile screenshots reviewed for widget and sales workspace. Existing contact, service and portfolio routes continue to build and link checks pass.
+- External APIs are mocked in automated tests. No live OpenAI responses, actual Resend delivery, Supabase deployment, Cal.com metadata/webhook round-trip, GA DebugView events, or production Netlify rate limits/schedule have been verified without provider configuration. Follow `SALES_ACCEPTANCE.md` before launch; `npm run eval:sales` provides synthetic live AI prompts once credentials are supplied securely.
